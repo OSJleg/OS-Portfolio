@@ -1,0 +1,29 @@
+button, input, select, textarea { 
+    font-family: inherit ;
+    font-size: 100%;
+}
+input, textarea, select {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+input[type="text"], input[type="email"], textarea {
+    width:45%;
+}
+@media (min-width: 35em) {
+    input[type="text"], input[type="email"], textarea, button {width: 45%;}
+
+}
+
+button {
+    cursor: pointer;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width:45%;
+
+}
+
+lable, textarea {
+    display: block; 
+    margin-top: 1em;
+}
+

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oleg Salko - Web Developer</title>
     <link rel="shortcut icon" href="../icons/favicon.ico" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
     <header>
@@ -26,12 +27,27 @@
       </div>
       <div>
         <!-- Contact form -->
-        <form action="confirm.html" method="get">
-          <label for="name">Name</label>
-          <input name="name" id="name" type="text" required />
-          <lable for="email">Email</lable>
-          <input name="email" id="email" type="email" required />
-          <labe for="message">Message</labe>
+        <form action="process.php" method="post" id="contact_form">
+          <!-- Name -->
+          <label for="name"></label>
+          <input
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Name"
+            required
+          />
+          <!-- Email -->
+          <lable for="email" placeholder="Email adress"></lable>
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Email adress"
+            required
+          />
+          <!-- Message -->
+          <labe for="message"></labe>
           <textarea
             cols="70"
             rows="10"
@@ -39,8 +55,9 @@
             id="message"
             type="text"
             required
-            placeholder="Write your message here..."
+            placeholder="Type your message here..."
           ></textarea>
+          <!-- Submit button -->
           <button type="submit">Send</button>
         </form>
       </div>
